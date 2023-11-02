@@ -797,6 +797,13 @@ footer {
     }
 
 
+    /* 熱門景點 */
+    .hot .container .item {
+        flex-basis: 100%;
+
+    }
+
+
 
 
     /* 浪漫歐洲_錨點 */
