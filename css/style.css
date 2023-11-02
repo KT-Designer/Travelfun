@@ -665,12 +665,22 @@ ul a {
 /* footer */
 footer {
     text-align: center;
-    margin: 20% 0 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 4% 0 0;
     padding: 16px;
     background-color: #003D96;
     color: #FFFFFF;
     font-size: 12px;
 }
+
+footer img {
+    width: 100%;
+    max-width: 1300px;
+}
+
 
 
 @media screen and (max-width:1200px) {
