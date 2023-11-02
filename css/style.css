@@ -6,7 +6,6 @@ body {
     background-image: url(../images/bg.png);
     background-size: contain;
     background-repeat: repeat-y;
-    overflow-x: hidden;
 
 }
 
@@ -17,6 +16,7 @@ body {
     background-size: cover;
     height: 100dvh;
     position: relative;
+    overflow-x: hidden;
 
 }
 
