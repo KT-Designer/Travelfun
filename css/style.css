@@ -94,13 +94,7 @@ body {
 
 }
 
-#swipe_up {
-    display: none;
-    width: 50px;
-    position: absolute;
-    left: 50%;
-    bottom: 4%;
-}
+
 
 
 .kv .cloud {
@@ -544,10 +538,6 @@ footer {
         display: none;
 
 
-    }
-
-    #swipe_up {
-        display: block;
     }
 
 
