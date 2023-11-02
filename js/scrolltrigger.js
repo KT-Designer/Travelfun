@@ -1,13 +1,22 @@
 // KV滾動視差
 gsap.registerPlugin(ScrollTrigger);
+const t1 = gsap.timeline({
+    scrollTrigger: {
+    },
+});
+t1.to("#scroll_down", { opacity: 0 });
+
+
 const t2 = gsap.timeline({
     scrollTrigger: {
     },
 });
-t2.to("#scroll_down", { opacity: 0 });
+t2.to("#swipe_up", { opacity: 0 });
 
 
-const tl = gsap.timeline({
+
+
+const t3 = gsap.timeline({
     scrollTrigger: {
         // 滾動.kv時觸發
         trigger: ".kv",
@@ -17,10 +26,10 @@ const tl = gsap.timeline({
         scrub: 0.5,
     },
 });
-tl.to("#left", { xPercent: "60" });
-tl.to(".airplane", { x: "40vw", y: "-30vh" }, "<");
-tl.to("#word", { yPercent: "-60" }, "<");
-tl.to("#right", { xPercent: "-60" }, "<");
+t3.to("#left", { xPercent: "60" });
+t3.to(".airplane", { x: "40vw", y: "-30vh" }, "<");
+t3.to("#word", { yPercent: "-60" }, "<");
+t3.to("#right", { xPercent: "-60" }, "<");
 
 
 

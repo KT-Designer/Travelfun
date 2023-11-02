@@ -8,6 +8,16 @@ var animation = bodymovin.loadAnimation({
 })
 
 
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('swipe_up'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://kt-designer.github.io/Travelfun/images/swipe_up.json'
+})
+
+
+
 
 
 
