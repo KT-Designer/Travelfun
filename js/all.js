@@ -4,7 +4,7 @@ var animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../images/scroll_down.json'
+    path: 'https://kt-designer.github.io/Travelfun/images/scroll_down.json'
 })
 
 
@@ -14,7 +14,7 @@ var animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../images/swipe_up.json'
+    path: 'https://kt-designer.github.io/Travelfun/images/swipe_up.json'
 })
 
 
