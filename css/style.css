@@ -586,7 +586,7 @@ ul a {
 
 
 .card {
-    padding: 8px;
+    padding: 12px;
     box-sizing: border-box;
     flex-basis: calc(25% - 8px);
     background-color: #FFFFFF;
