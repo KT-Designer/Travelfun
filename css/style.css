@@ -15,6 +15,175 @@ body {
 
 }
 
+/* 讓置頂鍵會自然滾動 */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 浮動主選單_監聽(.active配合JS) */
+.menu_pc a.active {
+    background-color: #003D96;
+    color: #FFFFFF;
+}
+
+
+/* 置頂鍵 */
+#scrolltop {
+    display: none !important;
+    position: fixed;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    bottom: 30px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #003D96;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+/* PC導覽列 */
+.open {
+    position: fixed;
+    top: 60px;
+    right: -50px;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    writing-mode: vertical-lr;
+    padding: 14px 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 14px 0px 0px 14px;
+    cursor: pointer;
+
+}
+
+.open:hover {
+    background-color: #003D96;
+}
+
+.menu_pc {
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.menu_pc .close {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu_pc .close p {
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    background-color: #003D96;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+
+
+.menu_pc li a {
+    font-family: 'Noto Sans TC';
+    margin: auto;
+    text-align: center;
+    max-width: 115px;
+    max-height: 45px;
+    padding: 12px 0px;
+    background: rgba(255, 255, 255, 0.60);
+    border: 2px dashed #F0F0F0;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.menu_pc li a:hover {
+    background-color: #003D96;
+    color: #FFFFFF;
+
+}
+
+.menu_pc ul {
+    padding-right: 4%;
+}
+
+.menu_pc ul a {
+    text-decoration: none;
+    color: #454545;
+}
+
+.menu_pc .top a {
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+/* 浮動主選單_手機 */
+.menu_MB {
+    display: none;
+    width: 100%;
+    margin: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+}
+
+
+
+.menu_MB ul {
+    display: flex;
+}
+
+
+.menu_MB ul li a {
+    display: inline-block;
+    width: 90px;
+    margin: 0px 2px;
+    padding: 10px 20.5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: #454545;
+    background-color: #FFFFFF;
+    border: 2px dashed #F0F0F0;
+}
+
+
+
+
+
+
+
+.menu_MB ul li a:hover {
+    background-color: #003D96;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
 /* 主視覺 */
 .kv {
     background-image: url(../images/kvbg.png);
@@ -574,6 +743,19 @@ footer {
 
 
 @media screen and (max-width:576px) {
+
+    /* 置頂鍵 */
+    #scrolltop {
+        display: block !important;
+    }
+
+    .menu_pc {
+        display: none;
+    }
+
+    .menu_MB {
+        display: block;
+    }
 
     /* 主視覺 */
     .kv h1 {
