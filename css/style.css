@@ -368,7 +368,7 @@ body {
     flex-wrap: wrap;
     max-width: 928px;
     margin: auto;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     position: relative;
     background-color: #EFF3F7;
@@ -416,9 +416,9 @@ ul a {
 
 
 .card {
-    padding: 12px;
+    padding: 8px;
     box-sizing: border-box;
-    flex-basis: calc(25% - 10px);
+    flex-basis: calc(25% - 8px);
     background-color: #FFFFFF;
     box-shadow: 3px 6px 9px 0px rgba(0, 0, 0, 0.14);
 
@@ -447,7 +447,7 @@ ul a {
 }
 
 .card_body h3 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 8px;
 }
@@ -625,17 +625,17 @@ footer {
 
     /* 浪漫歐洲_卡片 */
     .list .card {
-        flex-basis: calc(50% - 10px);
+        flex-basis: calc(50% - 8px);
     }
 
 
     .list {
-        padding: 14px 6px;
+        padding: 14px 4px;
         border: 14px solid transparent;
         border-image: 16 repeating-linear-gradient(-45deg,
                 #E72844 0, red 1em,
                 transparent 0, transparent 2em,
-                #003D96 0, #003D96 3em,
+                #0d0e10 0, #003D96 3em,
                 transparent 0, transparent 4em);
 
     }
