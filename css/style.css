@@ -190,7 +190,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100dvh;
-    /* 用vdh/vdw可解決手機尺吋的問題 */
+    /* 用dvh/dvw可解決手機尺吋的問題 */
     position: relative;
 
 }
